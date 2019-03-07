@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>A Nice Unit Converter</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Srisakdi|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+        <script type="text/javascript" src="aNiceUnitConverter.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"> </script>
+    </head>
+    <body>
+        <div id='center'>
+        <h1> A Nice Looking Unit Converter </h1>
+        <select style="min-width:125px; background: white;" id="select1" onchange='onInput()'>
+            <option value="Kilometers" class="Length"> Kilometers</option>
+            <option value="Miles" class="Length"> Miles</option>
+            <option value="Meters" class="Length"> Metres</option>
+            <option value="Feet" class="Length"> Feet</option>
+            <option value="Inches" class="Length"> Inches</option>
+            <option value="Centimeters" class="Length"> Centimeters</option>
+            <option value="Millimeters" class="Length"> Millimeters</option>
+
+            <option value="Kilograms" class="Weight"> Kilograms</option>
+            <option value="Gram" class="Weight"> Grams</option>
+            <option value="Ounces" class="Weight"> Ounces</option>
+            <option value="Pounds" class="Weight"> Pounds</option>
+
+        </select>
+        <select style="min-width:125px; background: white;" id="select2" onchange='onInput()'>
+            <option value="Kilometers" class="Length"> Kilometers</option>
+            <option value="Miles" class="Length"> Miles</option>
+            <option value="Meters" class="Length"> Metres</option>
+            <option value="Feet" class="Length"> Feet</option>
+            <option value="Inches" class="Length"> Inches</option>
+            <option value="Centimeters" class="Length"> Centimeters</option>
+            <option value="Millimeters" class="Length"> Millimeters</option>
+
+            <option value="Kilograms" class="Weight"> Kilograms</option>
+            <option value="Gram" class="Weight"> Grams</option>
+            <option value="Ounces" class="Weight"> Ounces</option>
+            <option value="Pounds" class="Weight"> Pounds</option>
+        </select>
+        <br></br>
+        <input type="text" style="width:250px; background: white;" oninput="onInput()" id='inputBox'>
+        <!-- <button type="button" name="button" style="width:250px; height:30px;"> Convert </button> -->
+        <h2 id='outputText'>0 Metres is 0 Metres </h2>
+        </div>
+        </body>
+    <style>
+        * {
+            text-align: center;
+            background-color: hsl(295, 100%, 80%);
+        }
+        br {
+            margin: 200px;
+        }
+        h1 {
+            font-family: 'Srisakdi', cursive;
+            color: white;
+
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+
+        }
+        #center {
+            margin-top: 15%;
+        }
+        option {
+            background-color: white;
+        }
+        .Length {
+            background-color: hsl(175, 100%, 80%);
+        }
+        .Weight {
+            background-color: hsl(111, 100%, 80%);
+        }
+    </style>
+</html>
